@@ -8,7 +8,10 @@ bot = commands.Bot(command_prefix='.', description="This is a Helper Bot")
 
 
 
-
+@bot.command()
+async def pleska(ctx):
+    await ctx.send('alexova')
+    
 
 @bot.command()
 async def ping(ctx):
