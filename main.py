@@ -1,3 +1,4 @@
+from http import client
 import os
 import string
 
@@ -15,6 +16,6 @@ async def pleska(ctx):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send('pong',bot.latency)
     
 bot.run(tokenforbot)
