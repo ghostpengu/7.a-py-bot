@@ -16,6 +16,6 @@ async def pleska(ctx):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong',bot.latency)
+    await ctx.send('pong')
     
 bot.run(tokenforbot)
