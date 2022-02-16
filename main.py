@@ -1,8 +1,9 @@
 import os
+import string
 
 import discord
 from discord.ext import commands
-
+tokenforbot = input(string)
 bot = commands.Bot(command_prefix='.', description="This is a Helper Bot")
 
 
@@ -13,4 +14,4 @@ bot = commands.Bot(command_prefix='.', description="This is a Helper Bot")
 async def ping(ctx):
     await ctx.send('pong')
     
-bot.run('OTQzNTEzODE2OTYzMTA0ODI4.Yg0Jtw.FNW3eYPHxQ3ZqDkrvUvaPEnI--o')
+bot.run(tokenforbot)
