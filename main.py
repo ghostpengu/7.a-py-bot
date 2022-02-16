@@ -1,8 +1,10 @@
 import ctypes
+from email import message
 from http import client
 import os
 import string
 import random
+from tkinter import Message
 
 import discord
 from discord.ext import commands
@@ -15,6 +17,30 @@ bot = commands.Bot(command_prefix='.', description="This is a Helper Bot")
 async def pleska(ctx):
     await ctx.send('alexova')
     
+
+@bot.command()
+async def pp(ctx):
+    ppdlzka = ["8D","8=D","8==D","8===D","8====D","8=====D","8======D","8=======D"]
+    
+    if ctx.author.display_name == "Meny":
+        await ctx.send(f'Tvoj Pp 8D')  
+       
+
+
+    if ctx.author.display_name == "Pingu":
+        await ctx.send(f'Tvoj Pp 8=========D')    
+    else:
+        if ctx.author.display_name == "Meny":
+            return
+
+
+
+        await ctx.send(f'Tvoj Pp {random.choice(ppdlzka)}')    
+
+        
+
+     
+
 
 @bot.command()
 async def ask(ctx,*,Question):
