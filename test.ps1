@@ -1,6 +1,7 @@
+Wait-Event -Timeout 5
 cmd 
 echo "running" 
-
+Wait-Event -Timeout 5
 
 echo "running" 
 echo "running" 
